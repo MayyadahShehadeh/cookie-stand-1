@@ -79,3 +79,21 @@ footer{
 
 
 }
+
+
+
+footer div{
+top:500px;
+    padding:25px;
+    margin-top: 150px;
+    background-color: #dad9d3bd;
+    border-radius: 20px;
+    width: 50%;
+    margin: auto;
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    box-shadow: 1px 2px 2px 4px #4b3f4188;
+
+}
