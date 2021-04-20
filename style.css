@@ -1,66 +1,81 @@
-
-header{
-    display: grid;
-
-    grid-template-columns: repeat(2,1fr);
-    align-items: center;
-    background: #393e46;
-}
-header image{
-
-    padding: 10px 20px;
-}
-header nav li {
-    display: inline;
-padding: 10px 20px;
-text-transform: uppercase;
-color: #4b778d;
-  font-weight: 600;
-  position: relative;
-    background-color: black;
-}
- 
-header img{
-    padding: 30px 20px;
-}
-
-
- main>img{
-    padding: 30px 30px;
-  
-   
-    align-items: center;
-  
- }
-
- main  div img{
-     
-    align-items: center;
-    padding: 30px 30px;
-
- }
-main section{
-    display: grid;
-
-    grid-template-columns: repeat(2,1fr);
-    width: 50%;
-    padding: 30px;
-    gap=20px;
-}
- section div  {
-    /* display: grid;
-
-    grid-template-columns: repeat(1,1fr); */
-
- }
-
-button{
-
-background-color: #ddd;
-}
-
-footer nav{
-    background-color: #444444;
-    height: 100px;
+header nav{
+    background-color: #518de7;
+    margin: 0;
+    padding: 0px;
+    position: relative;
     width: 100%;
+    top: 0;
+    border-bottom: 4px solid black;
+}
+nav ul{
+    margin: 0;
+    padding: 0 50px;
+    display: flex;
+    font-size: 4rem; 
+    list-style-type: none;
+    border: 5px;
+}
+li a{
+    text-decoration: none;
+    color:  #dad9d3d0;
+}
+li a:hover{
+    color: rgba(0, 0, 0, 0.521);
+}
+nav li{
+    margin: auto;
+}
+
+
+
+h1{
+    background-color:#518de7;
+    font-size: 4rem;  
+    text-align: center;
+    padding:0px;
+    margin-bottom: 30px;
+    border-bottom: 4px solid black;
+}
+
+main div p{
+    font-size: 4rem; 
+    text-align: center; 
+    
+    margin-bottom: 30px;
+
+}
+
+.image{
+    padding:25px;
+    margin-top: 150px;
+    background-color: #dad9d3bd;
+    border-radius: 20px;
+    width: 100%;
+    margin: auto;
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    box-shadow: 1px 2px 2px 4px #4b3f4188;
+
+}
+
+img{
+    width:20%;
+padding: 3px;
+border-radius: 20px;
+justify-content: space-between;
+}
+
+
+main div ul {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr) ;
+}
+
+footer{
+
+    background-color: #518de7;
+
+
 }
