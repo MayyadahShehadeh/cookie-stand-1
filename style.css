@@ -36,22 +36,27 @@ h1{
     padding:0px;
     margin-bottom: 30px;
     border-bottom: 4px solid black;
+  
 }
 
 main div p{
     font-size: 4rem; 
     text-align: center; 
-    
     margin-bottom: 30px;
+    color: #000;
 
 }
 
+.p{
+    text-shadow:#518de7 ;
+}
+
 .image{
-    padding:25px;
+    padding:10px;
     margin-top: 150px;
     background-color: #dad9d3bd;
     border-radius: 20px;
-    width: 100%;
+    width: 90%;
     margin: auto;
     display:flex;
     flex-direction: row;
@@ -62,8 +67,8 @@ main div p{
 }
 
 img{
-    width:20%;
-padding: 3px;
+    width:100px;
+padding: 2px;
 border-radius: 20px;
 justify-content: space-between;
 }
@@ -99,3 +104,27 @@ top:500px;
 
 }
 
+
+
+form{width: 20%;
+    margin:15px auto 20px;
+
+}
+fieldset{
+   border-width: 10px;
+   padding: 20px;
+   box-shadow: 0px 3px 2px 3px rgba(163, 161, 161, 0.74);
+   
+
+}
+legend{
+    font-weight: bold;
+    color: rgba(82, 156, 190, 0.733);
+    font-size: 1.3em;
+ 
+}
+
+main{
+background-image: url("images/family.jpg");
+
+}

@@ -118,16 +118,12 @@ function renderPage() {
 }
 
 heading();
-renderPage();
-footer();
 
 
-function generateRandomNumber(min, max) {
 
-    min = Math.ceil(min);
-    max = Math.floor(max);
-    return Math.floor(Math.random() * (max - min) + min);
-  }
+
+
+
   function generateRandomNumber(min, max) {
 
     min = Math.ceil(min);
@@ -135,3 +131,22 @@ function generateRandomNumber(min, max) {
     return Math.floor(Math.random() * (max - min) + min);
   }
   console.log(CookiesShop.City);
+
+
+var saleform = document.getElementById('saleform');
+  saleform.addEventListener('submit', eventButton);
+
+  function eventButton(event) {
+    event.preventDefault();
+  var name=event.target.name.value;
+  var maxcust=event.target.maxcust.value;
+  var mincust=event.target.mincust.value;
+  var avgsale=event.target.avgsale.value;
+
+  var newSale=new CookiesShop(name,maxcust,mincust,avgsale);
+  newSale.renderPage();
+  newSale.gitCustNumber();
+  newSale.reset();
+  }
+  renderPage();
+  footer();
