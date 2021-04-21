@@ -117,10 +117,10 @@ function renderPage() {
   }
 }
 
-
+heading();
 renderPage();
 footer();
-heading();
+
 
 function generateRandomNumber(min, max) {
 
