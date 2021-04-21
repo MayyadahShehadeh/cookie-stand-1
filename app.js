@@ -76,8 +76,9 @@ function heading() {
 }
 
 //__________________________________________________________________________________________________________________
+var tfoot;
 function footer() {
-  let tfoot = document.createElement('tr');
+   tfoot = document.createElement('tr');
   table.appendChild(tfoot);
 
   let thEle = document.createElement('th');
@@ -119,7 +120,8 @@ function renderPage() {
 
 heading();
 
-
+renderPage();
+footer();
 
 
 
@@ -144,9 +146,12 @@ var saleform = document.getElementById('saleform');
   var avgsale=event.target.avgsale.value;
 
   var newSale=new CookiesShop(name,maxcust,mincust,avgsale);
+ 
   newSale.renderPage();
   newSale.gitCustNumber();
-  newSale.reset();
-  }
-  renderPage();
+  table.removeChild(tfoot); 
   footer();
+  newSale.reset();
+
+  }
+ 
